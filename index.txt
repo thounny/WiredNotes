@@ -7,6 +7,8 @@ Your go-to platform for managing your everyday notes.
 
 #---------- SIDEBAR ----------#
 
+alt = WiredNote
+
 aria-label = Close menu
 <span class="material-symbols-rounded" aria-hidden="true">close</span>
 
