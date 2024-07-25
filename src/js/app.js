@@ -6,9 +6,11 @@ import {
   getGreetingMsg,
   activeNotebook,
   makeElemEditable,
+  generateID,
 } from "./utils.js";
 import { Tooltip } from "./components/Tooltip.js";
 import { db } from "./db.js";
+import { client } from "./client.js";
 
 // TOGGLE SIDEBAR in small screen
 
@@ -91,8 +93,15 @@ $addNotebookBtn.addEventListener("click", showNotebookField);
  notebook creation.
  */
 const createNoteBook = function (event) {
-  //   if (event.key === "Enter") {
-  //     console.log(event.key);
-  //   }
-  // Store new created notebook in database
+  if (event.key === "Enter") {
+    //     console.log(event.key);
+    // Store new created notebook in database
+    const /** {Object} */ notebookData = db.post.notebook(
+        this.textContent || "Untitled"
+      ); // this: $navItemField
+    this.parentElement.remove();
+
+    // Render navItem
+    client.notebook.create(notebookData);
+  }
 };
