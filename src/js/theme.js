@@ -13,23 +13,23 @@ const toggleTheme = function () {
   localStorage.setItem("theme", newTheme);
 };
 
-// INITIALIZE THEME
+/**
+ * Initialize the theme
+ */
 
 const /** {string | null} */ storedTheme = localStorage.getItem("theme");
-// console.log("🚀 ~ storedTheme:", storedTheme);
 const /** {Boolean} */ systemThemeIsDark = window.matchMedia(
     "(prefers-color-scheme: dark)"
   ).matches;
-// console.log("🚀 ~ systemThemeIsDark:", systemThemeIsDark);
 const /** {string} */ initialTheme =
     storedTheme ?? (systemThemeIsDark ? "dark" : "light");
-// console.log("🚀 ~ initialTheme:", initialTheme);
 document.documentElement.setAttribute("data-theme", initialTheme);
 
-// ATTACH toggleTheme to theme button click event
-
+/**
+ * Attach toggleTheme to theme button click event
+ */
 window.addEventListener("DOMContentLoaded", function () {
   const /** {HTMLElement} */ $themeBtn =
-      document.querySelector("[data-theme-btn");
+      document.querySelector("[data-theme-btn]");
   if ($themeBtn) $themeBtn.addEventListener("click", toggleTheme);
 });
