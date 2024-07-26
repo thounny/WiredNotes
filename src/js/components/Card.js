@@ -43,4 +43,57 @@ export const Card = function (noteData) {
   `;
 
   Tooltip($card.querySelector("[data-tooltip]"));
+
+  /**
+   * Note detail view & edit functionality
+   *
+   * Attaches a click event listener to card element.
+   * When the card is clicked, it opens a modal with the note's details and allows for updating the note.
+   */
+  $card.addEventListener("click", function () {
+    const /** {Object} */ modal = NoteModal(
+        title,
+        text,
+        getRelativeTime(postedOn)
+      );
+    modal.open();
+
+    modal.onSubmit(function (noteData) {
+      const updatedData = db.update.note(id, noteData);
+
+      // Update the note in the client UI
+      client.note.update(id, updatedData);
+      modal.close();
+    });
+  });
+
+  /**
+   * Note delete functionality
+   *
+   * Attaches a click event listener to delete button element within card.
+   * When the delete button is clicked, it opens a confirmation modal for deleting the associated note.
+   * If the deletion is confirmed, it updates the UI and database to remove the note.
+   */
+  const /** {HTMLElement} */ $deleteBtn =
+      $card.querySelector("[data-delete-btn]");
+  $deleteBtn.addEventListener("click", function (event) {
+    event.stopImmediatePropagation();
+
+    const /** {Object} */ modal = DeleteConfirmModal(title);
+
+    modal.open();
+
+    modal.onSubmit(function (isConfirm) {
+      if (isConfirm) {
+        const /** {Array} */ existedNotes = db.delete.note(notebookId, id);
+
+        // Update the client ui to reflect note deletion
+        client.note.delete(id, existedNotes.length);
+      }
+
+      modal.close();
+    });
+  });
+
+  return $card;
 };
