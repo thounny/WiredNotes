@@ -2,9 +2,13 @@
 
 // IMPORT MODULE
 import { NavItem } from "./components/NavItem.js";
+import { activeNotebook } from "./utils.js";
 
 const /** {HTMLElement} */ $sidebarList = document.querySelector(
     "[data-sidebar-list]"
+  );
+const /** {HTMLElement} */ $notePanelTitle = document.querySelector(
+    "[data-note-panel-title]"
   );
 
 /**
@@ -30,6 +34,8 @@ export const client = {
           notebookData.name
         );
       $sidebarList.appendChild($navItem);
+      activeNotebook.call($navItem);
+      $notePanelTitle.textContent = notebookData.name;
     },
   },
 };
