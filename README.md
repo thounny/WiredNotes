@@ -1,6 +1,6 @@
 # Simple Note Taking App
 
-#### Video Demo: <URL HERE> TODO
+#### Video Demo: https://youtu.be/xe6aiI1lzsI
 
 #### Description:
 
