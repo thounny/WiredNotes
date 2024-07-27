@@ -1,7 +1,5 @@
 # Simple Note Taking App
 
-#### Video Demo: https://youtu.be/xe6aiI1lzsI
-
 #### Description:
 
 Create a CRUD (Create, Read, Update, Delete) note-taking application using vanilla JavaScript. This application will enable users to manage their notes effectively by allowing them to add new notes, view existing notes, update notes, and delete notes as needed. The app will store notes locally on the user's device, providing a simple and intuitive interface for managing personal notes.
