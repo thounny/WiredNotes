@@ -33,12 +33,6 @@ Create a CRUD (Create, Read, Update, Delete) note-taking application using vanil
 - Fully functional CRUD operations for notes (Create, Read, Update, Delete)
 - Responsive web application accessible via a web browser
 
-## Timeline
-
-- **Planning and Design:** 1 week
-- **Implementation:** 2 weeks
-- **Testing and Debugging:** 1 week
-
 ## Future Enhancements
 
 - Implementing user authentication for secure note management
