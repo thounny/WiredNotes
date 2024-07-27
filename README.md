@@ -1,4 +1,4 @@
-# Simple Note Taking App
+# WiredNotes - Simple Note Taking App
 
 #### Description:
 
