@@ -12,42 +12,42 @@
   --black: #000000;
 
   /* Light theme */
-  --background-light: #FFFBFF;
-  --on-background-light: #201A18;
-  --surface-light: #FFF8F6;
-  --surface-container-low-light: #FEF1EC;
-  --surface-container-highest-light: #EDE0DB;
-  --on-surface-light: #201A18;
-  --on-surface-variant-light: #52443D;
-  --primary-light: #9D4300;
+  --background-light: #FAF5FF;
+  --on-background-light: #33323D;
+  --surface-light: #F9F4FF;
+  --surface-container-low-light: #EAE5FF;
+  --surface-container-highest-light: #D6D2FF;
+  --on-surface-light: #33323D;
+  --on-surface-variant-light: #625A6E;
+  --primary-light: #D1A3FF;
   --on-primary-light: #FFFFFF;
-  --primary-container-light: #FFDBCA;
-  --on-primary-container-light: #341100;
-  --secondary-container-light: #FFDBCA;
-  --on-secondary-container-light: #2B160A;
-  --outline-light: #85736B;
-  --outline-variant-light: #D7C2B9;
-  --inverse-surface-light: #362F2C;
-  --inverse-on-surface-light: #FBEEE9;
+  --primary-container-light: #E6CCFF;
+  --on-primary-container-light: #4A326E;
+  --secondary-container-light: #E6CCFF;
+  --on-secondary-container-light: #4A326E;
+  --outline-light: #B3A3C6;
+  --outline-variant-light: #E0D1EB;
+  --inverse-surface-light: #5E546E;
+  --inverse-on-surface-light: #F4EFFA;
 
   /* Dark theme */
-  --background-dark: #201A18;
-  --on-background-dark: #EDE0DB;
-  --surface-dark: #181210;
-  --surface-container-low-dark: #201A18;
-  --surface-container-highest-dark: #3A3330;
-  --on-surface-dark: #D0C4BF;
-  --on-surface-variant-dark: #D7C2B9;
-  --primary-dark: #FFB690;
-  --on-primary-dark: #552100;
-  --primary-container-dark: #783200;
-  --on-primary-container-dark: #FFDBCA;
-  --secondary-container-dark: #5C4032;
-  --on-secondary-container-dark: #FFDBCA;
-  --outline-dark: #A08D84;
-  --outline-variant-dark: #52443D;
-  --inverse-surface-dark: #EDE0DB;
-  --inverse-on-surface-dark: #201A18;
+  --background-dark: #33323D;
+  --on-background-dark: #D6D2FF;
+  --surface-dark: #2B2937;
+  --surface-container-low-dark: #33323D;
+  --surface-container-highest-dark: #48445A;
+  --on-surface-dark: #CDC4E0;
+  --on-surface-variant-dark: #E0D1EB;
+  --primary-dark: #E6CCFF;
+  --on-primary-dark: #4A326E;
+  --primary-container-dark: #6E55A3;
+  --on-primary-container-dark: #E6CCFF;
+  --secondary-container-dark: #6E55A3;
+  --on-secondary-container-dark: #E6CCFF;
+  --outline-dark: #A899C0;
+  --outline-variant-dark: #625A6E;
+  --inverse-surface-dark: #D6D2FF;
+  --inverse-on-surface-dark: #33323D;
 
   /**
    * TYPOGRAPHY
